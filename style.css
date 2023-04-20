@@ -16,7 +16,7 @@ body {
   width: 100%;
 }
 
-.promo .promo-info{
+.promo .promo-info {
   font-family: fantasy, cursive;
 }
 
@@ -42,7 +42,8 @@ body {
   display: flex;
 }
 
-ul {
+#unfinished-list,
+#finished-list {
   margin: 0;
   padding: 0px;
 }
@@ -73,7 +74,7 @@ button:hover {
 
 /* Heading */
 h3,
-label[for="new-task"] {
+.new-task {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -101,7 +102,7 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for="new-task"] {
+.new-task {
   display: block;
   margin: 0 0 20px;
 }
@@ -151,7 +152,7 @@ button.delete img:hover {
 }
 
 /* Completed */
-ul#finished-tasks label {
+ul#finished-item label {
   text-decoration: line-through color: #888;
 }
 
