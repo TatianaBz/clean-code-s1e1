@@ -1,0 +1,181 @@
+/* Basic Style */
+.body {
+  background-color: #f8f8f8;
+  color: #333;
+  font-family: Lato, sans-serif;
+}
+
+.promo {
+  width: 500px;
+  margin: 0 auto;
+  display: block;
+  text-align: right;
+}
+
+.promo_img {
+  width: 100%;
+}
+
+.promo_info {
+  font-family: fantasy, cursive;
+}
+
+@media (max-width: 768px) {
+
+  .promo {
+    text-align: center;
+  }
+
+}
+
+.page-wrapper {
+  display: block;
+  width: 500px;
+  margin: 0 auto 0;
+}
+
+.task {
+  width: 56%;
+  display: inline-block;
+  flex-grow: 1;
+}
+
+.new-task_wrapper {
+  display: flex;
+}
+
+.unfinished-list,
+.finished-list {
+  margin: 0;
+  padding: 0px;
+}
+
+.task_item,
+.title_section {
+  list-style: none;
+}
+
+.text_input,
+.checkbox_input {
+  outline: none;
+}
+
+.edit_button,
+.delete_button,
+.new-task_button {
+  outline: none;
+  background: none;
+  border: 0px;
+  color: #888;
+  font-size: 15px;
+  width: 60px;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+}
+
+.edit_button:hover,
+.delete-button:hover,
+.new-task_button:hover {
+  color: #3a3a3a;
+}
+
+/* Heading */
+.title_section {
+  color: #333;
+  font-weight: 700;
+  font-size: 15px;
+  border-bottom: 2px solid #333;
+  padding: 30px 0 10px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.text_input {
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 21px;
+  padding: 0 9px;
+  border: 1px solid #dddddd;
+  background: #ffffff;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color: #888;
+}
+
+.text_input:focus {
+  color: #333;
+}
+
+/* New Task */
+.new-task {
+  display: block;
+  margin: 0 0 20px;
+}
+
+.new-task_input {
+  width: 318px;
+}
+
+/* Task list */
+.task_item {
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.edit_button,
+.delete_button {
+  vertical-align: middle;
+}
+
+.checkbox_input {
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+.task_label {
+  vertical-align: middle;
+  padding-left: 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+  width: 226px;
+}
+
+.text_input {
+  vertical-align: middle;
+  width: 226px;
+}
+
+.delete_img{
+  height: 2em;
+  transform: rotateZ(45deg);
+  transition: transform 200ms ease-in;
+}
+
+.delete_img:hover {
+  transform: rotateZ(0);
+}
+
+/* Completed */
+.finished-item .task_label{
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Edit Task */
+.task_item .text_input{
+  display: none;
+}
+
+.task_edit .text_input {
+  display: inline-block;
+  width: 224px;
+}
+
+.task_edit .task_label {
+  display: none;
+}
