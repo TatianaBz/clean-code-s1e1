@@ -127,8 +127,8 @@
   align-items: center;
 }
 
-  .edit-button,
-  .delete-button {
+.edit-button,
+.delete-button {
   vertical-align: middle;
 }
 
