@@ -22,15 +22,17 @@
         <h3 class="title-section new-task">Add Item</h3>
         <div class="new-task-wrapper">
           <input id="new-task"
-                 class="task text-input"
+                 class="task new-task-input
+                        text-input"
                  type="text">
-          <button class="add-button">Add</button>
+          <button class="add-button add">Add</button>
         </div>
       </section>
       <section class="unfinished-task">
         <h3 class="title-section">Todo</h3>
-        <ul id="unfinished-list">
-          <li class="unfinished-item">
+        <ul id="unfinished-list"
+            class="unfinished-list task-list">
+          <li class="unfinished-item task-item">
             <input class="checkbox-input"
                    type="checkbox">
             <label class="task task-label">Pay Bills</label>
@@ -38,19 +40,22 @@
                    type="text"
                    value="Pay Bills">
             <button class="edit edit-button">Edit</button>
-            <button class="delete delete-button">
+            <button class="delete   delete-button">
               <img class="delete-img"
                    src="./remove.svg">
             </button>
           </li>
-          <li class="unfinished-item task-edit">
+          <li class="unfinished-item
+                     task-edit task-item">
             <input class="checkbox-input"
                    type="checkbox">
-            <label class="task task-label">Go Shopping</label>
+            <label class="task task-label">
+              Go Shopping</label>
             <input class="task text-input"
                    type="text"
                    value="Go Shopping">
-            <button class="edit edit-button">Save</button>
+            <button class="edit edit-button">
+              Save</button>
             <button class="delete delete-button">
               <img class="delete-img"
                    src="./remove.svg">
@@ -60,12 +65,14 @@
       </section>
       <section class="finished-task">
         <h3 class="title-section">Completed</h3>
-        <ul id="finished-list">
-          <li class="finished-item">
+        <ul id="finished-list"
+            class="finished-list task-list">
+          <li class="finished-item task-item">
             <input class="checkbox-input"
                    type="checkbox"
                    checked>
-            <label class="task task-label">See the Doctor</label>
+            <label class="task task-label">
+               See the Doctor</label>
             <input class="task text-input" type="text">
             <button class="edit edit-button">Edit</button>
             <button class="delete delete-button">
