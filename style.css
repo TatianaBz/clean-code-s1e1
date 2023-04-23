@@ -74,7 +74,7 @@
 }
 
 .edit_button:hover,
-.delete-button:hover,
+.delete_button:hover,
 .new-task_button:hover {
   color: #3a3a3a;
 }
