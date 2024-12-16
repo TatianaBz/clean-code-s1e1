@@ -36,17 +36,17 @@
   display: flex;
 }
 #activ, #completed-tasks {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 .task__item, .task__title{
-  list-style:none;
+  list-style: none;
 }
 .checkbox__input, .text__input, .added__input{
-  outline:none;
+  outline: none;
 }
 .edit__button, .delete__button, .added__button { 
-  outline:none;
+  outline: none;
   background: none;
   border: 0px;
   color: #888;
@@ -127,7 +127,7 @@
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.delete__img:hover {
+.delete__img :hover {
   transform: rotateZ(0);
 }
 
@@ -139,14 +139,14 @@
 
 /* Edit Task */
 .text__input {
-  display:none
+  display: none
 }
 
 .edit__item .text__input{
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .edit__item .task__label {
-  display:none;
+  display: none;
 }
