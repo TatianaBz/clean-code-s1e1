@@ -30,7 +30,7 @@
 .task {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 .added__wrapper {
   display: flex;
@@ -120,7 +120,7 @@
   width: 226px;
 }
 .text__input{
-  width: 226px
+  width: 226px;
 }
 .delete__img{
   height: 2em;
@@ -133,18 +133,18 @@
 
 /* Completed */
 #completed-tasks .task__label {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 .text__input {
-  display: none
+  display: none;
 }
 
 .edit__item .text__input{
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 .edit__item .task__label {
