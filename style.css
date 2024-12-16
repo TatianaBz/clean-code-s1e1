@@ -13,7 +13,7 @@ body {
 .info img {
   width: 100%;
 }
-.info .more__info {
+.info .info__link {
   font-family: fantasy, cursive;
 }
 
