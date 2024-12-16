@@ -49,13 +49,13 @@
 }
 
 .task__item,
-.task__title{
+.task__title {
   list-style: none;
 }
 
 .checkbox__input,
 .text__input,
-.added__input{
+.added__input {
   outline: none;
 }
 
@@ -90,7 +90,7 @@
 }
 
 .text__input,
-.added__input{
+.added__input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -118,7 +118,7 @@
 }
 
 /* Task list */
-.task__item{
+.task__item {
  overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -146,11 +146,11 @@
   width: 226px;
 }
 
-.text__input{
+.text__input {
   width: 226px;
 }
 
-.delete__img{
+.delete__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
@@ -171,7 +171,7 @@
   display: none;
 }
 
-.edit__item .text__input{
+.edit__item .text__input {
   display: inline-block;
   width: 224px;
 }
