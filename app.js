@@ -15,29 +15,29 @@ var completedTasksHolder = document.getElementById("completed-tasks"); //complet
 //New task list item
 var createNewTaskElement = function (taskString) {
   var listItem = document.createElement("li");
-  listItem.classList.add("activ__item", "task__item");
+  listItem.classList.add("activ__item", "task-item");
 
   //input (checkbox)
   var checkBox = document.createElement("input"); //checkbx
-  checkBox.classList.add("checkbox__input");
+  checkBox.classList.add("checkbox__input", "task-item__input");
 
   //label
   var label = document.createElement("label"); //label
-  label.classList.add("task", "task__label");
+  label.classList.add("task", "task__label", "task-item__label");
 
   //input (text)
   var editInput = document.createElement("input"); //text
-  editInput.classList.add("task", "text__input");
+  editInput.classList.add("task", "text__input", "task-item__input");
 
   //button.edit
   var editButton = document.createElement("button"); //edit button
-  editButton.classList.add("edit", "edit__button");
+  editButton.classList.add("edit", "edit__button", "task-item__button");
 
   //button.delete
   var deleteButton = document.createElement("button"); //delete button
   var deleteButtonImg = document.createElement("img"); //delete button image
-  deleteButton.classList.add("delete", "delete__button");
-  deleteButtonImg.classList.add("delete__img");
+  deleteButton.classList.add("delete", "delete__button", "task-item__button");
+  deleteButtonImg.classList.add("delete__img", "task-item__img");
 
   label.innerText = taskString;
   //label.className = "task";
@@ -57,6 +57,7 @@ var createNewTaskElement = function (taskString) {
   //deleteButton.appendChild(deleteButtonImg);
 
   //and appending.
+
   listItem.appendChild(checkBox);
   listItem.appendChild(label);
   listItem.appendChild(editInput);
@@ -91,11 +92,11 @@ var editTask = function () {
   var editBtn = listItem.querySelector(".edit");
   editBtn.classList.add("edit__button");
 
-  var containsClass = listItem.classList.contains("edit__item");
+  var containsClass = listItem.classList.contains("edit-item");
 
-  //If class of the parent is .edit__item
+  //If class of the parent is .edit-item
   if (containsClass) {
-    //switch to .edit__item
+    //switch to .edit-item
     //label becomes the inputs value.
     label.innerText = editInput.value;
     editBtn.innerText = "Edit";
@@ -104,8 +105,8 @@ var editTask = function () {
     editBtn.innerText = "Save";
   }
 
-  //toggle .edit__item on the parent.
-  listItem.classList.toggle("edit__item");
+  //toggle .edit-item on the parent.
+  listItem.classList.toggle("edit-item");
 };
 
 //Delete task.
